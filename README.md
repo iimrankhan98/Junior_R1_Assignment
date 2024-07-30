@@ -4,7 +4,9 @@
 Install docker 
 
 yum install docker -y
-systemctl start docker 
+
+systemctl start docker
+
 systemctl enable docker
 
 ## Step 2: Create flask Program ##
