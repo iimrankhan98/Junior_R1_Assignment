@@ -1,4 +1,4 @@
-# Junior_R1_Assignment 
+# Flask URL Ping Application
 
 ## Step 1: Launch AWS EC2 with Amazon Linux ##
 Install docker on EC2
