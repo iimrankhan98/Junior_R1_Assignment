@@ -70,9 +70,11 @@ microk8s kubectl get nodes
 alias kubectl='microk8s kubectl'
 
 
-## Step 5: Deploy flask app ##
+## Step 5: Deploy an app ##
 
 kubectl create deployment flask-app --image=iimrankhan98/flask-app:v1
+
+kubectl create deployment nginx --image=nginx
 
 kubectl get pods
 
