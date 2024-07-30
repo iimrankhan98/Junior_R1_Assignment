@@ -1,7 +1,7 @@
 # Junior_R1_Assignment 
 
-## Step 1: Launch AWS EC2 ##
-Install docker 
+## Step 1: Launch AWS EC2 with Amazon Linux ##
+Install docker on EC2
 
 yum install docker -y
 
@@ -13,13 +13,17 @@ systemctl enable docker
 Create sample flask program with an endpoint which will ping a list of urls to see if they return 200.
 
 Save the Flask application code to a file named app.py.
+
 Save the requirements to a file named requirements.txt.
+
 Save the Dockerfile to a file named Dockerfile.
 
 ## Step 3: Build Docker image and Run Docker container ##
 
 docker build -t flask-app:v1 .
+
 docker tag flask-app:v1  iimrankhan98/flask-app:v1
+
 docker run -dit --name flask-app  -p 9090:9090 iimrankhan98/flask-app:v1
 
 ## Step 4: Test the flask application ##
@@ -33,6 +37,7 @@ Successfully output comes with status code 200
 Login "hub.docker.com" with user id and password
 
 docker login
+
 docker push iimrankhan98/flask-app:v1
 
 
