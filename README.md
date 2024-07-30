@@ -41,5 +41,55 @@ docker login
 docker push iimrankhan98/flask-app:v1
 
 
+### Setup MicroK8s on AWS EC2 Ubuntu OS ###
+
+## Step 1: Install MicroK8s ##
+
+sudo apt update && sudo apt upgrade -y
+
+sudo snap install microk8s --classic --channel=1.30
+
+## Step 2: Join the group ##
+
+sudo usermod -a -G microk8s $USER
+
+mkdir -p ~/.kube
+
+chmod 0700 ~/.kube
+
+su - $USER
+
+## Step 3: Check the status ##
+
+microk8s status --wait-ready
+
+## Step 4: Access Kubernetes ##
+
+microk8s kubectl get nodes
+
+alias kubectl='microk8s kubectl'
+
+## Step 5: Enabling MicroK8s Add-ons ##
+
+For example, to enable a storage add-on that can auto-provision persistent volumes “PV”, we can use the below command.
+
+microk8s enable dns
+
+microk8s enable hostpath-storage
+
+## Step 6: Starting and Stopping MicroK8s ##
+
+microk8s start
+
+microk8s stop
+
+
+
+
+
+
+
+
+
 
 
