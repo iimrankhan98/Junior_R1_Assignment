@@ -69,7 +69,15 @@ microk8s kubectl get nodes
 
 alias kubectl='microk8s kubectl'
 
-## Step 5: Enabling MicroK8s Add-ons ##
+
+## Step 5: Deploy flask app ##
+
+kubectl create deployment flask-app --image=iimrankhan98/flask-app:v1
+
+kubectl get pods
+
+
+## Step 6: Enabling MicroK8s Add-ons ##
 
 For example, to enable a storage add-on that can auto-provision persistent volumes “PV”, we can use the below command.
 
@@ -77,7 +85,7 @@ microk8s enable dns
 
 microk8s enable hostpath-storage
 
-## Step 6: Starting and Stopping MicroK8s ##
+## Step 7: Starting and Stopping MicroK8s ##
 
 microk8s start
 
