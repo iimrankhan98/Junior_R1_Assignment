@@ -102,7 +102,7 @@ docker run -d --name gitlab -p 443:443 -p 80:80 gitlab/gitlab-ce:latest
 
 docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
-## Push your changes to the remote repository ##
+## Push your changes to the remote repository Gitlab ##
 
 git clone http://13.201.4.192/root/miko_ai.git
 
@@ -123,14 +123,6 @@ git push --set-upstream origin main
 enter password
 
 git push --set-upstream origin main
-
-
-
-
-
-
-
-
 
 
 
