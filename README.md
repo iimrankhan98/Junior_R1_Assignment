@@ -1,4 +1,4 @@
-# Flask URL Ping Application
+![image](https://github.com/user-attachments/assets/14162be4-e0f4-4b50-8d29-4db87164bcee)# Flask URL Ping Application
 
 ## Step 1: Launch AWS EC2 with Amazon Linux ##
 Install docker on EC2
@@ -92,6 +92,20 @@ microk8s enable hostpath-storage
 microk8s start
 
 microk8s stop
+
+
+## Set up Gitlab Repo locally.check in. Could be using docker image as well ##
+
+Setting up GitLab Locally Using Docker
+
+docker pull gitlab/gitlab-ce:latest
+
+docker run -d --name gitlab -p 443:443 -p 80:80 gitlab/gitlab-ce:latest
+
+docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
+
+
+
 
 
 
