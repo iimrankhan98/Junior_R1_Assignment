@@ -125,7 +125,9 @@ enter password
 git push --set-upstream origin main
 
 
+## Set up gitlab ci yaml with stages for building and dockerizing ##
 
+.gitlab-ci.yml
 
 
 
