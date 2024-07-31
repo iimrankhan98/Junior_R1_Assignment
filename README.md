@@ -102,6 +102,29 @@ docker run -d --name gitlab -p 443:443 -p 80:80 gitlab/gitlab-ce:latest
 
 docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
+## Push your changes to the remote repository ##
+
+git clone http://13.201.4.192/root/miko_ai.git
+
+cd miko_ai
+
+cp Dockerfile README.md  app.py  requirements.txt  miko_ai/
+
+git switch --create main
+
+git add .
+
+git commit -m "flask code" .
+
+git remote add gitlab  http://13.201.4.192/root/miko_ai.git
+
+git push --set-upstream origin main
+
+enter password
+
+git push --set-upstream origin main
+
+
 
 
 
