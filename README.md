@@ -129,6 +129,23 @@ git push --set-upstream origin main
 
 .gitlab-ci.yml
 
+## Setup GitLab-Runner Using AWS EC2 Ubuntu ##
+
+ Prerequisite
+
+ Install docker and start docker
+
+ curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
+
+sudo apt-get install gitlab-runner
+
+sudo systemctl start gitlab-runner
+
+sudo systemctl status gitlab-runner
+
+sudo systemctl start gitlab-runner
+
+
 
 
 
