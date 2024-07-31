@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/14162be4-e0f4-4b50-8d29-4db87164bcee)# Flask URL Ping Application
-
 ## Step 1: Launch AWS EC2 with Amazon Linux ##
 Install docker on EC2
 
