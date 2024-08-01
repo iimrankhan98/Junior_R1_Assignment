@@ -147,7 +147,7 @@ sudo systemctl start gitlab-runner
 
 sudo usermod -aG docker  gitlab-runner
 
-docker login -u iimrankhan98 -p Bashid321
+docker login -u iimrankhan98 -p passwd
 
 
 
